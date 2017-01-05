@@ -1,0 +1,405 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{717E0BF8-3F03-4D32-ABB7-202066107EC9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HotelBooking</RootNamespace>
+    <AssemblyName>HotelBooking</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.BonusSkins.v16.1, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v16.1, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v16.1.Core, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v16.1.Core, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v16.1, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v16.1, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v16.1, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v16.1, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v16.1, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v16.1, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v16.1, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportViewer.2015.12.0.2.2402\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportViewer.2015.12.0.2.2402\lib\net40\Microsoft.ReportViewer.DataVisualization.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportViewer.2015.12.0.2.2402\lib\net40\Microsoft.ReportViewer.Design.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportViewer.2015.12.0.2.2402\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebDesign, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportViewer.2015.12.0.2.2402\lib\net40\Microsoft.ReportViewer.WebDesign.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportViewer.2015.12.0.2.2402\lib\net40\Microsoft.ReportViewer.WebForms.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportViewer.2015.12.0.2.2402\lib\net40\Microsoft.ReportViewer.WinForms.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaoCao\frmDensity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao\frmDensity.Designer.cs">
+      <DependentUpon>frmDensity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCao\frmSales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao\frmSales.Designer.cs">
+      <DependentUpon>frmSales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeThong\ucBackground.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HeThong\ucBackground.Designer.cs">
+      <DependentUpon>ucBackground.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeThong\ucIntro.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HeThong\ucIntro.Designer.cs">
+      <DependentUpon>ucIntro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LuuTru\frmInforCus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LuuTru\frmInforCus.Designer.cs">
+      <DependentUpon>frmInforCus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LuuTru\frmParam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LuuTru\frmParam.Designer.cs">
+      <DependentUpon>frmParam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LuuTru\frmRentRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LuuTru\frmRentRoom.Designer.cs">
+      <DependentUpon>frmRentRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LuuTru\ucBill.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LuuTru\ucBill.Designer.cs">
+      <DependentUpon>ucBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LuuTru\ucRentRoom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LuuTru\ucRentRoom.Designer.cs">
+      <DependentUpon>ucRentRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LuuTru\ucRoom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LuuTru\ucRoom.Designer.cs">
+      <DependentUpon>ucRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LuuTru\ucRoomType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LuuTru\ucRoomType.Designer.cs">
+      <DependentUpon>ucRoomType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NguoiDung\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NguoiDung\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Person.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TraCuu\ucChooseRoom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TraCuu\ucChooseRoom.Designer.cs">
+      <DependentUpon>ucChooseRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TraCuu\ucSearchCustomer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TraCuu\ucSearchCustomer.Designer.cs">
+      <DependentUpon>ucSearchCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TraCuu\ucSearchRoom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TraCuu\ucSearchRoom.Designer.cs">
+      <DependentUpon>ucSearchRoom.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BaoCao\frmDensity.resx">
+      <DependentUpon>frmDensity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao\frmSales.resx">
+      <DependentUpon>frmSales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao\rpDensity.rdlc" />
+    <EmbeddedResource Include="BaoCao\rpSales.rdlc" />
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\ucBackground.resx">
+      <DependentUpon>ucBackground.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\ucIntro.resx">
+      <DependentUpon>ucIntro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LuuTru\frmInforCus.resx">
+      <DependentUpon>frmInforCus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LuuTru\frmParam.resx">
+      <DependentUpon>frmParam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LuuTru\frmRentRoom.resx">
+      <DependentUpon>frmRentRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LuuTru\ucBill.resx">
+      <DependentUpon>ucBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LuuTru\ucRentRoom.resx">
+      <DependentUpon>ucRentRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LuuTru\ucRoom.resx">
+      <DependentUpon>ucRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LuuTru\ucRoomType.resx">
+      <DependentUpon>ucRoomType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NguoiDung\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="TraCuu\ucChooseRoom.resx">
+      <DependentUpon>ucChooseRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TraCuu\ucSearchCustomer.resx">
+      <DependentUpon>ucSearchCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TraCuu\ucSearchRoom.resx">
+      <DependentUpon>ucSearchRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.Config" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\DTO.BCDoanhThuDTO.datasource" />
+    <None Include="Properties\DataSources\DTO.BCMatDoDTO.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Ribbon_Find_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Boss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Repair.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Dollar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Dial.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Accounting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\user-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\database.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Thumbs down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Thumbs up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Turn off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Apply.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Erase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Create.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Equipment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUS\BUS.csproj">
+      <Project>{361d8e71-d088-4c18-976b-91f3c4794740}</Project>
+      <Name>BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAO\DAO.csproj">
+      <Project>{d4dbd757-755c-43f5-a604-3f0826199a73}</Project>
+      <Name>DAO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{ef1a09ae-e1ce-47cc-91f8-8e554540f41a}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ManagePlugin\ManagePlugin.csproj">
+      <Project>{39888828-1cd8-494b-a8be-8d9967410f54}</Project>
+      <Name>ManagePlugin</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Sync.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Filter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\bgNew.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\2014-03-07_084656.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\2016-12-17_0-19-31.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
